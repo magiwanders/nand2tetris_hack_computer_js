@@ -1,0 +1,14 @@
+CHIP HalfAdder {
+    IN a, b;
+    OUT sum, carry;  
+
+    PARTS:
+    Xor(a=a, b=b, out=sum);
+    And(a=a, b=b, out=carry);
+} TEST {
+|   a   |   b   |  sum  | carry || Passed | sum | carry | 
+|   0   |   0   |   0   |   0   ||   Y
+|   0   |   1   |   1   |   0   ||   Y
+|   1   |   0   |   1   |   0   ||   Y
+|   1   |   1   |   0   |   1   ||   Y
+}

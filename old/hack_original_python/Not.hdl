@@ -1,0 +1,18 @@
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    Nand(a=in, b=in, out=out);
+} TEST {
+
+|  in   |  out  || Passed | out | 
+|   0   |   1   ||   Y
+|   1   |   0   ||   Y
+
+}
+
+
+
+
+

@@ -1,0 +1,15 @@
+CHIP DMux {
+    IN in, sel;
+    OUT a, b;
+
+    PARTS:
+    Not(in=sel, out=notsel);
+    And(a=in, b=notsel, out=a);
+    And(a=in, b=sel, out=b);
+} TEST {
+|  in   |  sel  |   a   |   b   || Passed | a | b | 
+|   0   |   0   |   0   |   0   ||   Y
+|   0   |   1   |   0   |   0   ||   Y
+|   1   |   0   |   1   |   0   ||   Y
+|   1   |   1   |   0   |   1   ||   Y
+}

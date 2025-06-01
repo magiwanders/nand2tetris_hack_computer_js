@@ -1,0 +1,13 @@
+build-src-Desktop-Debug/
+build-src-Desktop-Release/
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeCache.txt.prev
+CMakeFiles/
+Makefile
+Testing/
+cmake_install.cmake
+hack_computer_original_qt
+hack_computer_original_qt_autogen
+qtcsettings.cmake
+.cmake

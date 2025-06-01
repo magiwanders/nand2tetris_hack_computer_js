@@ -1,0 +1,19 @@
+CHIP DMux4Way {
+    IN in, sel[2];
+    OUT a, b, c, d;
+
+    PARTS:
+    DMux(in=in, sel=sel[1], a=isaorb, b=iscord);
+    DMux(in=isaorb, sel=sel[0], a=a, b=b);
+    DMux(in=iscord, sel=sel[0], a=c, b=d);
+} TEST {
+| in  | sel  |  a  |  b  |  c  |  d  || Passed | a | b | c | d | 
+|  0  |  00  |  0  |  0  |  0  |  0  ||   Y
+|  0  |  01  |  0  |  0  |  0  |  0  ||   Y
+|  0  |  10  |  0  |  0  |  0  |  0  ||   Y
+|  0  |  11  |  0  |  0  |  0  |  0  ||   Y
+|  1  |  00  |  1  |  0  |  0  |  0  ||   Y
+|  1  |  01  |  0  |  1  |  0  |  0  ||   Y
+|  1  |  10  |  0  |  0  |  1  |  0  ||   Y
+|  1  |  11  |  0  |  0  |  0  |  1  ||   Y
+}

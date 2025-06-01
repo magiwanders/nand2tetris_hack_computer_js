@@ -1,0 +1,39 @@
+CHIP PCcontroller {
+    IN j[3], zr, ng, opcode;
+    OUT out;
+
+    PARTS:
+	Not(in=opcode, out=notOpcode);
+	Not(in=zr, out=notzr);
+	Not(in=ng, out=notng);
+	And3(a=j[0], b=j[1], c=j[2], out=out1);
+	And3(a=j[2], b=notzr, c=notng, out=out2);    
+	And3(a=j[0], b=notzr, c=ng, out=out3);
+	And3(a=j[1], b=zr, c=notng, out=out4);
+	Or(a=out1, b=out2, out=out12);
+	Or(a=out12, b=out3, out=out123);
+	Or(a=out123, b=out4, out=out1234);
+	Mux(a=out1234, b=false, sel=notOpcode, out=out);
+} TEST {
+|  j  |zr |ng |opcode | out || Passed | out | 
+| 000 | 0 | 0 |   0   |  0  ||   Y
+| 001 | 1 | 0 |   0   |  0  ||   Y
+| 100 | 0 | 1 |   0   |  0  ||   Y
+| 110 | 0 | 1 |   0   |  0  ||   Y
+| 000 | 1 | 1 |   0   |  0  ||   Y
+| 111 | 0 | 0 |   0   |  0  ||   Y
+| 001 | 1 | 1 |   0   |  0  ||   Y
+| 000 | 0 | 0 |   0   |  0  ||   Y
+| 000 | 0 | 0 |   1   |  0  ||   Y
+| 000 | 1 | 0 |   1   |  0  ||   Y
+| 000 | 0 | 1 |   1   |  0  ||   Y
+| 001 | 1 | 0 |   1   |  0  ||   Y
+| 100 | 0 | 1 |   1   |  0  ||   Y
+| 110 | 0 | 1 |   1   |  0  ||   Y
+| 000 | 1 | 1 |   1   |  0  ||   Y
+| 111 | 0 | 0 |   1   |  1  ||   Y
+| 001 | 1 | 1 |   1   |  0  ||   Y
+| 111 | 1 | 0 |   1   |  1  ||   Y
+| 010 | 1 | 0 |   1   |  1  ||   Y
+| 100 | 0 | 0 |   1   |  1  ||   Y
+}

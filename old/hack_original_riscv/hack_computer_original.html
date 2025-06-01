@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nand2Tetris</title>
+</head>
+
+<body>
+
+    <h1>Nand2Tetris Hack Computer</h1>
+    <h3>Javascript Re-Implementation</h3>
+
+    <button id="tutorial_button">Show Tutorial</button>
+
+    <div id='tutorial' style='display: none;'>
+      <ul>
+        <li>Video Link</li>
+      </ul>
+    </div>
+
+    <br><br>
+
+    <button id="settings_button">Show Settings</button>
+
+    <div id='settings' style='display: none;margin-left: 50px;margin-top: 10px;padding-left: 5px;background-color: lightgrey;width:400px;'>
+      <!-- <br> -->
+      <!-- <button id="benchmark_button">Benchmark</button>
+      <p id='benchmark_results'>Benchmark Results will appear here.</p> -->
+
+      <label for="setup_cycles">Number of setup cycles:</label>
+      <input type="number" id="setup_cycles" name="setup_cycles" value = 1000000>
+      <br>
+      <label for="cycles_per_frame">Number of cycles per frame:</label>
+      <input type="number" id="cycles_per_frame" name="cycles_per_frame" value = 100000>
+      <br>
+      <label for="fps">Frames per second:</label>
+      <input type="number" id="fps" name="fps" value = 10>
+      <br>
+      <button id="apply_button">Apply</button>
+
+      <br>
+      <label for="fps">RAM[</label>
+      <input type="number" id="ram_cell" name="ram_cell" value = 0 style = 'width: 25px;'>
+      <label for="fps">] = </label>
+      <input type="number" id="ram_value" name="ram_value" value = 0 style = 'width: 55px;'>
+      <button id="write_button">Write</button>
+
+      <!-- <p>Calculated processor speed: </p> -->
+      <br>
+    </div>
+
+    <br><br>
+    <button id="start_button" style="background: lightgreen;">START</button>
+    <button id="reset_button">Reset</button>
+    <button id="cycle_button">Cycle</button>
+    <button id="frame_button">Frame</button>
+    <p><b>Current Settings</b></p>
+    <div style="display:inline-block;">Setup cycles: </div> <div id = "setup_cycles_value" style="display:inline-block;">1000000</div>
+    <br>
+    <div style="display:inline-block;">Cycles per frame: </div> <div id = "cycles_per_frame_value" style="display:inline-block;">100000</div>
+    <br>
+    <div style="display:inline-block;">FPS: </div> <div id = "fps_value" style="display:inline-block;">10</div>
+    <br><br>
+
+    <h3>SCREEN</h3>
+    <button id="refresh_screen">Manual Refresh</button>
+    <label for="pixelOFF_color" style='margin-left: 100px;'>Pixel OFF:</label><input type="color" name="pixelOFF_color" id="pixelOFF_color" value="#EDEDED">
+    <label for="pixelON_color" style='margin-left: 25px;'>Pixel ON:</label><input type="color" name="pixelON_color" id="pixelON_color" value="#000000">
+    <br><br>
+    <canvas id="screen" width=512 height=256 style="border: 1px solid;"> </canvas>
+
+    <h3 id='KBD'>KBD=""</h3>
+
+    <input type="file" id="rom_file" name="rom_file">
+    <br><br>
+    <button id="load_button">Load in ROM</button>
+    <br><br>
+    <textarea id="program" name="program" rows="30" cols="17"></textarea>
+
+
+
+
+    <script src="js/hack_original/utility/instruction.js"></script>
+    <script src="js/hack_original/utility/defaults.js"></script>
+    <script src="js/hack_original/cpu/pc.js"></script>
+    <script src="js/hack_original/cpu/pc_controller.js"></script>
+    <script src="js/hack_original/cpu/alu.js"></script>
+    <script src="js/hack_original/cpu/cpu.js"></script>
+    <script src="js/hack_original/hack_original.js"></script>
+    <script src="js/hack_original/memory.js"></script>
+    <script src="js/hack_original/rom.js"></script>
+
+    <script src="js/hack_computer_original.js"></script>
+
+</body>
+
+</html>

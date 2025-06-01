@@ -1,0 +1,19 @@
+CHIP FullAdder {
+    IN a, b, c;
+    OUT sum, carry;   
+
+    PARTS:
+    HalfAdder(a=a, b=b, sum=ab, carry=cab);
+    HalfAdder(a=ab, b=c, sum=sum, carry=cabc);
+    Or(a=cab, b=cabc, out=carry);
+} TEST {
+|   a   |   b   |   c   |  sum  | carry || Passed | sum | carry | 
+|   0   |   0   |   0   |   0   |   0   ||   Y
+|   0   |   0   |   1   |   1   |   0   ||   Y
+|   0   |   1   |   0   |   1   |   0   ||   Y
+|   0   |   1   |   1   |   0   |   1   ||   Y
+|   1   |   0   |   0   |   1   |   0   ||   Y
+|   1   |   0   |   1   |   0   |   1   ||   Y
+|   1   |   1   |   0   |   0   |   1   ||   Y
+|   1   |   1   |   1   |   1   |   1   ||   Y
+}

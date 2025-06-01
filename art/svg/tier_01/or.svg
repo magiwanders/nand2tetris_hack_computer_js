@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.143415mm"
+   height="7.8789458mm"
+   viewBox="0 0 16.143415 7.8789458"
+   version="1.1"
+   id="svg3532"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="or.svg"
+   inkscape:export-filename="/home/magiwanders/OneDrive/MusicEngineering/thesis_simoneshawncazzaniga/nand_logic_svg_files/tier_01/or_labeled.png"
+   inkscape:export-xdpi="3481.6841"
+   inkscape:export-ydpi="3481.6841"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3534"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="14.009553"
+     inkscape:cy="10.385631"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3593"
+       originx="-5.3526002"
+       originy="-4.0075326" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3529" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.3526004,-4.0075325)">
+    <g
+       id="g831"
+       inkscape:export-filename="/home/magiwanders/OneDrive/MusicEngineering/thesis_simoneshawncazzaniga/drawings/01/or.png"
+       inkscape:export-xdpi="3481.6841"
+       inkscape:export-ydpi="3481.6841">
+      <path
+         d="m 8.1871848,4.272116 c 8.1172602,0 9.0107322,3.665384 9.0107322,3.665384 h 4.298098 -4.319916 c -1.161933,4.336399 -9.0416578,3.64458 -9.0416578,3.64458 3.7526538,-3.6653846 0.021828,-7.3089484 0.021828,-7.3089484 z"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path6154"
+         sodipodi:nodetypes="ccccccc"
+         inkscape:export-filename="/home/magiwanders/OneDrive/MusicEngineering/thesis_simoneshawncazzaniga/nand_logic_svg_files/tier_01/or.png"
+         inkscape:export-xdpi="3481.6841"
+         inkscape:export-ydpi="3481.6841" />
+      <g
+         id="g830"
+         transform="translate(0,-0.06757798)">
+        <path
+           d="M 5.3526004,6.2645835 H 9.3452501"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path6156" />
+        <path
+           d="M 5.3526004,9.7645835 H 9.3452501"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path6158" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.14866px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0287166"
+       x="5.4903755"
+       y="9.2554522"
+       id="text14052-3"><tspan
+         sodipodi:role="line"
+         id="tspan14050-6"
+         style="stroke-width:0.0287166"
+         x="5.4903755"
+         y="9.2554522">b</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.14866px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0287166"
+       x="5.5414147"
+       y="5.7466521"
+       id="text14052"><tspan
+         sodipodi:role="line"
+         id="tspan14050"
+         style="stroke-width:0.0287166"
+         x="5.5414147"
+         y="5.7466521">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.14866px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0287166"
+       x="19.35004"
+       y="7.4043989"
+       id="text14052-3-7"><tspan
+         sodipodi:role="line"
+         id="tspan14050-6-5"
+         style="stroke-width:0.0287166"
+         x="19.35004"
+         y="7.4043989">out</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+CHIP And {
+    
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Nand(a=a, b=b, out=out1);
+    Nand(a=out1, b=out1,  out=out);
+
+} TEST {
+
+|   a   |   b   |  out  || Passed | out | 
+|   0   |   0   |   0   ||   Y
+|   0   |   1   |   0   ||   Y
+|   1   |   0   |   0   ||   Y
+|   1   |   1   |   1   ||   Y
+
+}
